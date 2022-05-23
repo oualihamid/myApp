@@ -6,7 +6,7 @@ import {
   View,
   Dimensions
 } from 'react-native';
-import { Card, Title, Paragraph, Badge, Chip, Divider, DataTable, Avatar } from 'react-native-paper';
+import { Card, Title, Paragraph, Badge, Chip, Divider, DataTable, Avatar, Button } from 'react-native-paper';
 var moment = require('moment');
 import MapView, { Callout, Marker } from 'react-native-maps';
 const {height, width} = Dimensions.get('window');
@@ -19,13 +19,23 @@ const INIT_REGION = {
   latitudeDelta: 10,
   longitudeDelta: (15 * ASPECT_RATIO) ,
 } 
-
+import FiltreComponent from '../components/FiltreComponent';
 import Store from './../stores';
 
 const MapMarkersComponent = (props) => {
   const [data, setData] = useState([]);
   const [markers, setMarkers] = useState([]);
   const mapRef = useRef(null);
+
+  const getData =()=>{
+    // data fetching function
+    const fetchData = async () => {
+      const data = await Store.appStore.getList();
+      setData(data);
+    }
+    fetchData()
+      .catch(console.error);
+  }
 
   useEffect(() => {
     // declare the data fetching function
@@ -49,6 +59,8 @@ const MapMarkersComponent = (props) => {
   }, [])
 
   return (
+    <View style={styles.container}>
+
     <MapView
         ref={mapRef}
         style={{flex:1}}
@@ -83,6 +95,11 @@ const MapMarkersComponent = (props) => {
           </Marker>
         ))}
       </MapView>
+          <Button  style={styles.buttonShow} mode="contained" onPress={getData}>
+            <Text>Reload</Text>
+          </Button>
+       <FiltreComponent data={data} setData={setData}/>
+     </View> 
   );
 };
 
@@ -101,7 +118,19 @@ const styles = StyleSheet.create({
   pop: {
     width: 200,
     height: 110,
-  },  
+  },
+  buttonShow:{
+    top:60,
+    right:5,
+    width:120,
+    height:45, 
+    position:'absolute',
+    color:'#FFF',
+    borderRadius:20,
+    fontSize:14,
+    fontWeight:'bold',
+    backgroundColor:'#C0C0C0', 
+  }  
 });
 
 export default MapMarkersComponent;

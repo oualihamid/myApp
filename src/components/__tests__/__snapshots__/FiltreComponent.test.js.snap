@@ -29,26 +29,26 @@ exports[`renders correctly 1`] = `
       style={
         Object {
           "alignSelf": "flex-end",
-          "backgroundColor": "gray",
+          "backgroundColor": "#C0C0C0",
           "borderRadius": 20,
           "color": "#FFF",
           "fontFamily": "System",
           "fontSize": 14,
           "fontWeight": "bold",
-          "height": 35,
-          "lineHeight": 35,
-          "margin": 0,
-          "minWidth": 35,
+          "height": 45,
+          "lineHeight": 45,
+          "margin": 5,
+          "minWidth": 45,
           "opacity": 1,
           "overflow": "hidden",
           "paddingHorizontal": 4,
           "textAlign": "center",
           "textAlignVertical": "center",
-          "width": 70,
+          "width": 120,
         }
       }
     >
-      Filtrer
+      FILTRER
     </Text>
   </View>
 </View>

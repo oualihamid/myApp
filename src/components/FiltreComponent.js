@@ -62,7 +62,7 @@ const plusSCreen = ({data,setData }) => {
         </View>
       </Modal>
       <Pressable onPress={() => setModalVisible(true)}>  
-        <Badge size={35} style={styles.button}>Filtrer</Badge>
+        <Badge size={45} style={styles.button}>FILTRER</Badge>
       </Pressable> 
     </View>
   );
@@ -86,18 +86,17 @@ const styles = StyleSheet.create({
     elevation: 5
   },
   button: {
-    margin:10,
-    width:70,
+    width:120,
     color:'#FFF',
     borderRadius:20,
-    margin:0,
     fontSize:14,
     fontWeight:'bold',
-    backgroundColor:'gray'
+    backgroundColor:'#C0C0C0', 
+    margin:5,
   },
   close:{
     margin:10,  
-    backgroundColor:'gray',
+    backgroundColor:'#C0C0C0',
     color:'#FFF'
   },
   buttonShow:{
