@@ -1,5 +1,5 @@
 
-Simple application développé, sous react native, qui permet de visualiser l’emplacement des stations et le nombre de vélos disponibles pour plusisieurs ville en France. 
+Une petite application développée, sous react native, qui permet de visualiser l’emplacement des stations et le nombre de vélos disponibles pour plusisieurs villes en France. 
 
 
 
