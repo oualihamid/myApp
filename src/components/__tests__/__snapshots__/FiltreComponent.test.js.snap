@@ -1,0 +1,55 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View>
+  <Modal
+    animationType="slide"
+    hardwareAccelerated={false}
+    onRequestClose={[Function]}
+    transparent={true}
+    visible={false}
+  />
+  <View
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onBlur={[Function]}
+    onClick={[Function]}
+    onFocus={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+  >
+    <Text
+      collapsable={false}
+      numberOfLines={1}
+      style={
+        Object {
+          "alignSelf": "flex-end",
+          "backgroundColor": "gray",
+          "borderRadius": 20,
+          "color": "#FFF",
+          "fontFamily": "System",
+          "fontSize": 14,
+          "fontWeight": "bold",
+          "height": 35,
+          "lineHeight": 35,
+          "margin": 0,
+          "minWidth": 35,
+          "opacity": 1,
+          "overflow": "hidden",
+          "paddingHorizontal": 4,
+          "textAlign": "center",
+          "textAlignVertical": "center",
+          "width": 70,
+        }
+      }
+    >
+      Filtrer
+    </Text>
+  </View>
+</View>
+`;
