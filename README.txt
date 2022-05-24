@@ -1,47 +1,27 @@
 
-Une application développée, sous react native, qui permet de visualiser l’emplacement des stations et le nombre de vélos disponibles pour plusisieurs villes en France. 
+Une application développée, sous react native Expo,  qui permet de visualiser l’emplacement des stations et le nombre de vélos disponibles pour plusisieurs villes en France.
 
 
 
 *** Les données ***
-
 La récupération des données se fait via l’API Rest de JCDecaux.
 
 
-*** Installation *** 
+*** Installation avec Expo *** 
 
- 
 1)    cloner le  projet https://github.com/oualihamid/myApp.git 
 
-2)    Ouvrir PoweShell sous windows, se positionner dans le répertoire de l'application 
-
-3)    Installation 
-
-Lancer cette commande :  
+2)    Installation 
 
 npm install --global expo-cli 
 
-4)    Lancement de l’application 
-
-Lancer cette commande :    
+3)    Lancement de l’application 
 
 npm start 
  
-Un qr code est affiché sur votre console.  
+Un QR code est affiché sur votre console.  
+4)    Télécharger sur votre mobile l’application Expo, elle est disponible sur l'App Store et sur le Google Play. 
+5)    Scanner le qrcode avec votre mobile.  
 
-5)    Télécharger sur votre mobile l’application Expo, elle est disponible sur l'App Store et sur le Google Play. 
-
- 
-6)    Scanner le qrcode avec votre mobile  
-
-
-
-
-*** Contact **
 
 Créé par Hamid Ouali   
-Email : hamid_ouali@yahoo.fr 
-
-
-
-
